@@ -8,6 +8,7 @@ version = "1.0"
 description = "A SQLite backend that keeps the db file synchronized with the doit's state."
 requires-python = ">=3.8"
 license = { file = "LICENSE" }
+readme = "README.md"
 authors = [
     { name = "Julien Pontabry", email = "jpontabry@unistra.fr" }
 ]
@@ -37,7 +38,6 @@ sqlite3sync = "doit_sqlite_sync:SqliteDBSync"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["doit_sqlite_sync"]
 
 [tool.setuptools.package-data]
 doit_sqlite_sync = ["py.typed"]
